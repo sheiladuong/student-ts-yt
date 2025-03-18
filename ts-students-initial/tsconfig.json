@@ -3,5 +3,6 @@
         "target": "ES6",
         "rootDir": "./src",
         "outDir": "./dist",
+        "strictNullChecks": true
     }
 }
