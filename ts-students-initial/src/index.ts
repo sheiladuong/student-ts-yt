@@ -1,7 +1,7 @@
 import data from './data.js' ;
 
 const students = JSON.parse(data);
-console.log(students);
+// console.log(students);
 
 interface Student {
     id: string,
