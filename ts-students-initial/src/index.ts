@@ -52,8 +52,15 @@ function selectTable() {
 }
 
 function refreshTable(table : HTMLTableElement, student : Student[]) {
-
+    table.querySelector("tbody")!.innerHTML = "";
+    students.forEach(student => {
+        addRow(table, student);
+    });
 }
 
-// add a row
-addRow(selectTable(), students[0]);
+// // add a row
+// addRow(selectTable(), students[0]);
+
+window.onload = function() {
+    refreshTable(selectTable(), students);
+}
