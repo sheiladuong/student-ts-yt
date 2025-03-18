@@ -3,6 +3,16 @@ import data from './data.js' ;
 const students = JSON.parse(data);
 console.log(students);
 
+interface Student {
+    id: string,
+    firstName: string,
+    lastName: string,
+    dateAdmission: string,
+    birthYear: string,
+    focusArea?: string | string[],
+    dateRegistrationSuspended?: string
+}
+
 function addRow(table) {
     
     let tr = table.querySelector("tbody").insertRow();
